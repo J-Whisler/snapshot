@@ -1,0 +1,55 @@
+:root {
+    --primary: rgb(40, 93, 128);
+    --secondary: rgb(248, 178, 142);
+}
+
+.nav-container {
+    height: 5rem;
+    background: var(--primary);
+    width: 100%;
+    position: sticky;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    .logo-container {
+        // border: 2px solid rgb(218, 89, 89);
+        display: flex;
+        align-items: center;
+        padding-left: 7rem;
+        h3 {
+            font-family: "Bangers", serif;
+            font-size: 3rem;
+            letter-spacing: 0.3rem;
+            color: var(--secondary);
+            text-shadow: 3px 3px 2px rgb(1, 7, 39);
+        }     
+    }
+    .navbar-container {
+        // border: 2px solid yellow;
+        display: flex;
+        align-items: center;
+        padding-left: 7rem;
+        .nav-item {
+            font-family: "Passion One", sans-serif;
+            font-size: 1.7rem;
+            letter-spacing: 0.2rem;
+            color: var(--secondary);
+            margin: auto 2rem;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+            &.nav-item-active {
+                font-size: 1.9rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 5px solid var(--secondary);
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
