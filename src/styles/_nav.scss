@@ -38,12 +38,14 @@
             color: var(--secondary);
             margin: auto 2rem;
             cursor: pointer;
+            text-decoration: none;
             transition: all 0.5s ease-in-out;
             &:hover {
                 transform: scale(1.2);
             }
             &.nav-item-active {
                 font-size: 1.9rem;
+                text-shadow: 3px 3px 2px rgb(1, 7, 39);
                 padding-bottom: 0.5rem;
                 border-bottom: 5px solid var(--secondary);
                 &:hover {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import "../styles/_nav.scss";
 
 const Nav = () => {
@@ -14,24 +14,27 @@ const Nav = () => {
       </div>
 
       <div className="navbar-container">
-        <div
+        <Link
+          to="/"
           className={activeTab === 1 ? "nav-item nav-item-active" : "nav-item"}
           onClick={() => ToggleTab(1)}
         >
           About Us
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/our-work"
           className={activeTab === 2 ? "nav-item nav-item-active" : "nav-item"}
           onClick={() => ToggleTab(2)}
         >
           Our Work
-        </div>
-        <div
+        </Link>
+        <Link
+          to="/contact"
           className={activeTab === 3 ? "nav-item nav-item-active" : "nav-item"}
           onClick={() => ToggleTab(3)}
         >
           Contact
-        </div>
+        </Link>
       </div>
     </div>
   );
