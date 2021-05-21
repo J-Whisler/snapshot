@@ -1,0 +1,64 @@
+:root {
+    --primary: rgb(42, 31, 45);
+    --secondary: rgb(80, 144, 130);
+}
+
+.about-section-container {
+    // border: 5px solid yellow;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--primary);
+    // justify-content: space-between;
+    // align-items: center;
+    .about-section-left {
+        border: 3px solid var(--secondary);
+        height: 100vh;
+        h2 {
+            font-size: 4rem;
+            color: var(--secondary);
+            font-family: "Source Code Pro", sans-serif;
+            letter-spacing: 0.2rem;
+            text-shadow: 2px 2px 0px rgb(1, 56, 40);            margin: 5rem 0 5rem 2rem;
+            span {
+                display: block;
+                letter-spacing: 0.6rem;
+                
+            }
+        }
+        p {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            font-family: "Source Code Pro", sans-serif;
+            margin-left: 2rem;
+        }
+
+        .social-icons {
+            // border: 5px blue solid;
+            display: flex;
+            // padding-left: 2rem;
+            margin-top: 7rem;
+            text-align: left;
+            width: 82%;
+            justify-content: space-evenly;
+            i {
+                color: var(--secondary);
+                font-size: 2.5rem;
+                cursor: pointer;
+                margin: 0 4rem;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                    text-shadow: 2px 2px 0px rgb(1, 56, 40);
+                }
+            }
+        }
+        
+    }
+    .about-section-right {
+        // border: 5px solid black;
+        height: 100vh;
+        background: url("../images/about-section-right.jpg") center center/cover no-repeat;
+    }
+}

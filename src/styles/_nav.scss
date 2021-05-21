@@ -1,6 +1,6 @@
 :root {
-    --primary: rgb(40, 93, 128);
-    --secondary: rgb(248, 178, 142);
+    --primary: rgb(42, 31, 45);
+    --secondary: rgb(80, 144, 130);
 }
 
 .nav-container {
@@ -8,6 +8,7 @@
     background: var(--primary);
     width: 100%;
     position: sticky;
+    top: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // justify-content: center;
@@ -23,7 +24,7 @@
             font-size: 3rem;
             letter-spacing: 0.3rem;
             color: var(--secondary);
-            text-shadow: 3px 3px 2px rgb(1, 7, 39);
+            text-shadow: 2px 2px 0px rgb(1, 56, 40);
         }     
     }
     .navbar-container {
@@ -45,8 +46,7 @@
             }
             &.nav-item-active {
                 font-size: 1.9rem;
-                text-shadow: 3px 3px 2px rgb(1, 7, 39);
-                padding-bottom: 0.5rem;
+                text-shadow: 2px 2px 0px rgb(1, 56, 40);                padding-bottom: 0.5rem;
                 border-bottom: 5px solid var(--secondary);
                 &:hover {
                     transform: none;

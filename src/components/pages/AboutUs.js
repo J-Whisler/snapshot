@@ -1,13 +1,17 @@
 import React from "react";
 
-import "../../styles/_home.scss";
+
 import "../AboutSection";
 import AboutSection from "../AboutSection";
+import Showcase from '../Showcase';
+import Faq from '../Faq';
 
 const AboutUs = () => {
   return (
     <>
       <AboutSection />
+      <Showcase />
+      <Faq />
     </>
   );
 };
